@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Sample</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ress@4.0.0/dist/ress.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- カルーセル（Slick） -->
+      <section id="carouselSlick">
+        <h1>カルーセル（Slick）</h1>
+        <div class="carousel_items">
+          <img src="images/image1.png" alt="風景写真１" />
+          <img src="images/image2.png" alt="風景写真２" />
+          <img src="images/image3.png" alt="風景写真３" />
+        </div>
+      </section>
+
+      <!-- カルーセル（Swiper） -->
+      <section id="carouselSwiper">
+        <h1>カルーセル（Swiper）</h1>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/image1.png" alt="風景写真１" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/image2.png" alt="風景写真２" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/image3.png" alt="風景写真３" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+
+      <!-- フェードイン（自作） -->
+      <section id="feedIn">
+        <h1>フェードイン（自作）</h1>
+        <div class="contents">
+          <div class="content">
+            <div>
+              <img src="images/image1.png" alt="風景写真１" />
+            </div>
+            <div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+            <div>
+              <img src="images/image2.png" alt="風景写真２" />
+            </div>
+          </div>
+          <div class="content">
+            <div>
+              <img src="images/image3.png" alt="風景写真３" />
+            </div>
+            <div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- フェードイン（AOS） -->
+      <section id="feedInAOS">
+        <h1>フェードイン（AOS）</h1>
+        <div class="contents-aos">
+          <div class="content-aos" data-aos="fade-in">
+            <div>
+              <img src="images/image1.png" alt="風景写真１" />
+            </div>
+            <div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+          <div class="content-aos" data-aos="fade-in">
+            <div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+            <div>
+              <img src="images/image2.png" alt="風景写真２" />
+            </div>
+          </div>
+          <div class="content-aos" data-aos="fade-in">
+            <div>
+              <img src="images/image3.png" alt="風景写真３" />
+            </div>
+            <div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

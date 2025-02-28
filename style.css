@@ -1,0 +1,88 @@
+/* ルート設定 */
+:root {
+  font-size: 14px;
+}
+
+/* 共通設定 */
+h1 {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 2.0rem;
+}
+
+/* カルーセル（Slick） */
+#carouselSlick {
+  background-color: rgb(193, 193, 193);
+  padding: 30px 0;
+
+  .carousel_items {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+/* カルーセル（Swiper） */
+#carouselSwiper {
+  padding: 30px 0;
+
+  .swiper {
+    width: 1000px;
+    height: 562px;
+  }
+
+  img {
+    width: 1080px;
+    height: auto;
+  }
+}
+
+/* フェードイン（自作） */
+#feedIn {
+  background-color: rgb(193, 193, 193);
+  padding-bottom: 30px;
+
+  .contents {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      opacity: 0;
+
+      div {
+        flex: 1;
+        padding: 0 20px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* フェードイン（AOS） */
+#feedInAOS {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .contents-aos {
+    .content-aos {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      div {
+        flex: 1;
+        padding: 0 20px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
